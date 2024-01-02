@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.calculator{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #1f1f38;
+}
+.calculator_box{
+    height: 75vh;
+    width: 25%;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    row-gap: 0.5rem;
+    color: #fff;
+    box-shadow: 0 0 10px #fff;
+    border-radius: 1rem;
+}
+button:hover{
+    color: #4db5ff;
+}
+/* Inside calculator div for button css */
+.calculator_box>div{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+/* Button Css */
+button{
+    width: 3.4rem;
+    height: 3.4rem;
+    margin:0.2rem;
+    font-size: 1.2rem;
+    color: #fff;
+    border:none;
+    background: transparent;
+    box-shadow: 0 0.2rem 0.9rem rgba(84,84,84,0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    background: #000;
+    text-align: center;
+    font-size: 1.7rem;
+}
+/* Input Css */
+input{
+    height: 8vh;
+    width: 90%;
+    font-size: 2rem;
+    text-align: right;
+    padding-right: 2rem;
+    color: #fff;
+    background: transparent;
+    border: none;
+    box-shadow: 0 0.2rem 0.9rem rgba(84,84,84,0.1);
+    cursor: pointer;
+}
+input::placeholder{
+    color: #fff;
+    
+}
+/* Id through apply css target button element  */
+#equal:hover{
+    color: #000;
+}
+#equal{
+    background-color: #4db5ff;
+}
+#ac{
+    background-color: red;
+}
+#del{
+    background-color: #fff;
+    color: #000;
+}
+#del:hover{
+    color:#4db5ff
+}
+#percentage{
+    background-color: rgb(110, 64, 9);
+}
+#devide{
+    background-color: rgb(110, 64, 9);
+}
+#mul{
+    background-color: rgb(110, 64, 9);
+}
+#minus{
+    background-color: rgb(110, 64, 9);
+}
+#plus{
+    background-color: rgb(110, 64, 9);
+}
+#double_zero{
+    background-color: rgb(110, 64, 9);
+}
+#zero{
+    background-color: rgb(110, 64, 9);
+    
+}
+#point{
+    background-color: rgb(110, 64, 9);
+
+}
+
+/*==> @Media Query for Responsive <== */
+
+/* For iphone & android */
+@media (min-width:300px) and (max-width:1024px) and (max-height:1200px){
+    .calculator{
+        height: 100vh;
+        width: 100%;
+    }
+    .calculator_box{
+        height: 82vh;
+        width: 90%;
+    }
+    button{
+        height: 3rem;
+        width: 3rem;
+    }
+    input{
+        padding-right: 2rem;
+    }
+}
+@media (min-width:400px) and (max-width:1000px){
+    input{
+        padding-right: 4rem;
+    }
+}
+/* For tables */
+@media (min-width:700px) and (max-width:1024px){
+    .calculator{
+        height: 100vh;
+        width: 100%;
+    }
+    .calculator_box{
+        height: 50%;
+        width: 50%;
+    }
+    button{
+        height: 3.6rem;
+        width: 3.6rem;
+    }
+}
+/* Smart watch */
+@media (min-width:100px) and (max-width:300px){
+    .calculator{
+        height: 100vh;
+        width: 100%;
+    }
+    .calculator_box{
+        height: 100%;
+        width: 100%;
+        padding-bottom: 1.5rem;
+        padding-top: 1rem;
+        row-gap: 0;
+    }
+    button{
+        height: 0.9rem;
+        width: 1.5rem;
+        font-size: 0.8rem;
+        margin: 0.1rem;
+        padding: 0;
+        border: none;
+        border-radius: 0px;
+        
+    }
+    input{
+        margin: 0;
+        padding-right: 2rem;
+        padding-top: 0.1rem;
+        font-size: 0.7rem;
+        height: 1rem;
+        width: 90%;
+        background-color: #4db5ff;
+    }
+    input::placeholder{
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width:300px) and (max-height:450px){
+    .calculator{
+        height: 100vh;
+        width: 100%;
+    }
+    .calculator_box{
+        height: 100%;
+        width: 100%;
+        padding-bottom: 1.5rem;
+        padding-top: 1rem;
+        row-gap: 0;
+    }
+    button{
+        height: 0.9rem;
+        width: 1.5rem;
+        font-size: 0.8rem;
+        margin: 0.1rem;
+        padding: 0;
+        border: none;
+        border-radius: 0px;
+        
+    }
+    input{
+        margin: 0;
+        padding-right: 2rem;
+        padding-top: 0.1rem;
+        font-size: 0.7rem;
+        height: 1rem;
+        width: 90%;
+        background-color: #4db5ff;
+    }
+    input::placeholder{
+        font-size: 0.7rem;
+    }
+}
